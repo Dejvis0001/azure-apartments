@@ -1,0 +1,591 @@
+/*Root*/
+:root {
+    --primary-color: #021832;
+    --secondary-color: #a3a190;
+    --bg-color: #f4f4f4;
+    --bg-white: #fff;
+    --bg-black: #000;
+    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Oswald", sans-serif;
+    --primary-text: #021832;
+    --secondary-text: white;
+    --text-white: #fff;
+    --text-black: #151515;
+    --gold: #867051;
+    --light-gold: #bd9b71;
+    --black: #20252d;
+}
+::selection {
+    color: #f3c033;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--text-white);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--text-black);
+}
+html,
+body {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EB Garamond", serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+section {
+    padding: 2.511rem 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    flex: 1;
+}
+li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    padding-left: unset;
+}
+body::-webkit-scrollbar {
+    width: 13px;
+}
+body::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #585033;
+    border-radius: 0;
+}
+/*  HEADER */
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: #f2f2f2;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.nav-item .underline {
+    height: 4px;
+    background-color: transparent;
+    width: 0;
+    transition: width 0.6s, background-color 0.6s;
+    border-radius: 70px;
+    margin: 0 auto;
+}
+.nav-item.active-link a {
+    color: #C4B583;
+}
+.nav-item.active-link .underline {
+    width: 100%;
+    background-color: #C4B583;
+}
+.nav-item:hover .underline {
+    background-color: #C4B583;
+    width: 100%;
+}
+.nav-item:hover a {
+    color: #C4B583;
+}
+.nav-item:active a {
+    transition: none;
+}
+.nav-item:active .underline {
+    transition: none;
+    background-color: #C4B583;
+}
+::selection {
+    background-color: tan;
+    color: black;
+}
+.navbar-nav {
+    margin-left: auto;
+    gap: 20px;
+    font-size: 18px;
+}
+.navbar {
+    background-color: rgba(0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar-toggler {
+    border-color: #C4B583 !important;
+    background-color: #C4B583;
+    color: transparent !important;
+}
+.navbar-toggler:hover,
+.navbar-toggler:active {
+    border-color: #C4B583 !important;
+    background-color: #C4B583;
+    color: transparent !important;
+}
+header .navbar .prova {
+    margin: 0;
+    margin-left: 0px;
+    margin-left: auto;
+    flex-direction: row;
+    display: flex;
+}
+.flag {
+    margin: auto;
+}
+.btn-3 {
+    overflow: hidden;
+}
+/*ABOUT_AREA*/
+
+/*FACILITIES*/
+/*ROOMS*/
+/*TESTIMONIALS*/
+/*GALLERY*/
+/*About Us*/
+#about-head {
+    background: url(assets/image/12.png) rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 70vh;
+    text-align: center;
+}
+/*Rooms*/
+.rooms {
+    padding: 100px 0 100px 0;
+}
+#rooms-head {
+    background: url(assets/image/19.png) rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 70vh;
+    text-align: center;
+}
+.offset-right-xl-15 {
+    margin-right: 15px;
+}
+.owl-item img {
+    height: 600px;
+}
+.pp {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+}
+.single-project {
+    text-align: left;
+    display: grid;
+    justify-content: center;
+}
+.single-project p {
+    font-size: 25px;
+    margin-top: 25px;
+}
+.divider-30 {
+    margin: 30px 0;
+}
+.divider {
+    font-size: 0;
+    line-height: 0;
+    height: 1px;
+    width: 100%;
+    background: #e1e1e1;
+}
+.text-gray-500 {
+    color: #9b9b9b;
+}
+.list-description {
+    text-align: left;
+}
+.divider+* {
+    margin-top: 0;
+}
+.icon-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.icon-row .icon {
+    position: relative;
+    font-size: 30px;
+    cursor: pointer;
+}
+.icon-row .icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    white-space: nowrap;
+    background-color: #33333365;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.icon-row .icon::after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+}
+/*Gallery*/
+#gallery-head {
+    background: url(assets/image/16.png) rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 70vh;
+    text-align: center;
+}
+.s-gallery {
+    padding: 100px 0px 100px 0px;
+}
+.s-gallery .gallery-main .gallery-box {
+    position: relative;
+    height: 500px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.s-gallery .gallery-main .gallery-box:hover .content {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+.s-gallery .gallery-main .gallery-box:hover {
+    transform: translateY(10px);
+}
+.s-gallery .gallery-main .gallery-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-box {
+    width: 100%;
+    margin: 25px 0px 25px 0px;
+}
+/*General*/
+#rooms-head h1,
+#contact-head h1,
+#gallery-head h1,
+#about-head h1 {
+    font-family: "Sedan SC", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    color: #FFFFFF;
+}
+#rooms-head p,
+#contact-head p,
+#gallery-head p,
+#about-head p {
+    color: #f2f2f2;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+.hs1 {
+    text-decoration: none;
+    color: #b5a067;
+}
+.hs1:hover {
+    color: white;
+}
+.tagline::before {
+    content: "";
+    display: block;
+    width: 68px;
+    height: 2px;
+    background-color: #C4B583;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Contact Us*/
+#contact-head {
+    background: url(assets/image/18.png) rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 70vh;
+    text-align: center;
+}
+.box-contacts {
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 310px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+    transition: all .3s ease;
+}
+.box-contacts {
+    text-align: center;
+}
+.box-contacts-icon {
+    font-size: 45px;
+    line-height: 1;
+    color: #b5a067;
+}
+.box-contacts-decor {
+    display: none;
+}
+.box-contacts:hover .box-contacts-decor {
+    display: block;
+    margin: 30px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 2px;
+    max-width: 100px;
+    background: #b5a067;
+    transition: .03s;
+}
+.box-contacts-link {
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: .025em;
+    margin-top: 15px;
+}
+.box-contacts-link a:hover {
+    color: #b5a067;
+}
+.contacts h6 {
+    color: #737a83;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.contacts h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+}
+/** FOOTER **/
+.footer {
+    background: #2a2c31;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer p {
+    text-align: left;
+    color: whitesmoke;
+}
+.footer h4 {
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    border-bottom: #C4B583 solid 3px;
+    padding-bottom: 3px;
+    display: table;
+}
+ul.conta li {
+    color: whitesmoke;
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 15px;
+    list-style: none;
+}
+ul.conta li i {
+    padding-right: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+ul.conta li a {
+    color: whitesmoke;
+}
+ul.link_menu li {
+    display: block;
+    text-align: left;
+}
+ul.link_menu li.active a {
+    color: #C4B583;
+    fill: #C4B583 !important;
+}
+ul.link_menu li a {
+    color: whitesmoke;
+    font-size: 17px;
+    line-height: 28px;
+    display: inline-block;
+    width: -moz-max-content;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 600;
+    fill: whitesmoke;
+}
+ul.link_menu li a:hover {
+    color: #C4B583;
+    fill: #C4B583 !important;
+}
+iframe {
+    margin-bottom: -5px;
+}
+.copyright {
+    margin-top: 10px;
+    background-color: #F5f5f5;
+    border-right: inherit;
+    border-left: inherit;
+}
+.copyright p {
+    color: #000;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border-top: 0;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.copyright a {
+    color: #000;
+    font-weight: bold;
+}
+.copyright a:hover {
+    color: #C4B583;
+}
+.footer .logo a {
+    justify-content: center !important;
+    position: relative;
+    text-decoration: none;
+}
+.footer .footer-widget ul li {
+    margin-bottom: 10px;
+}
+.footer .footer-widget ul li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer .footer-widget ul li a span {
+    font-size: 14px;
+}
+.footer .footer-widget ul li a:hover {
+    color: #C4B583;
+}
+.footer .footer-widget ul li a:hover span {
+    color: #A3BB98;
+}
+.footer .footer-widget .btn-primary {
+    background: #fff !important;
+    border: 2px solid #fff !important;
+}
+.footer .footer-widget .btn-primary:hover {
+    background: #fff;
+    border: 2px solid #fff !important;
+}
+/*BUTTONS */
+#button,
+#button::after {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#button {
+    background: #C4B583;
+    border: 0;
+    border-radius: 5px;
+    color: #f2f2f2 !important;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 13px 30px;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #C4B583;
+    transition: all 0.4s ease-in-out;
+}
+#button::before,
+#button::after {
+    background: #f2f2f2 !important;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+#button:hover {
+    color: #f2f2f2 !important;
+    transform: scale(1);
+    border: 2px solid #C4B583;
+    box-shadow: 0 0 5px 5px #C4B583;
+}
+/*Mobile*/
+@media screen and (max-width: 1200px) {
+    .footer h4 {
+        text-align: center;
+        width: 100%;
+    }
+    ul.conta li,
+    ul.link_menu li {
+        text-align: center;
+    }
+    #rooms-head h1,
+    #contact-head h1,
+    #gallery-head h1,
+    #about-head h1 {
+        font-size: 40px;
+    }
+    .gallery-box {
+        margin: 10px 0 10px 0;
+    }
+    .owl-item img {
+        height: 50vh;
+    }
+    .pp {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    header .navbar .prova {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .box-contacts:hover .box-contacts-decor {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        transition: margin .3s ease, width .4s ease-in-out;
+    }
+    .box-contacts-decor {
+        margin-top: 17px;
+        margin-bottom: 17px;
+        width: 0;
+    }
+    .box-contacts:hover {
+        border-color: transparent;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
+    }
+}
